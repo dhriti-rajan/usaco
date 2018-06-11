@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/python/python.iml" filepath="$PROJECT_DIR$/python/python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-usaco/java-usaco.iml" filepath="$PROJECT_DIR$/java-usaco/java-usaco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/py-usaco/py-usaco.iml" filepath="$PROJECT_DIR$/py-usaco/py-usaco.iml" />
     </modules>
   </component>
 </project>
