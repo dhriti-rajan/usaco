@@ -7,7 +7,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Gift1 {
+public class gift1 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader("gift1.in"));
         int peopleNumber = Integer.parseInt(reader.readLine());
@@ -27,7 +27,11 @@ public class Gift1 {
 
             int money = Integer.parseInt(st.nextToken());
             int divisions = Integer.parseInt(st.nextToken());
-            int giftAmount = money/divisions;
+
+            int giftAmount;
+            if (divisions == 0) giftAmount = 0;
+            else giftAmount = money/divisions;
+
             int giftedMoney = giftAmount * divisions;
             int giverMoney = (int) accounts.get(currentGiver);
 
@@ -46,7 +50,7 @@ public class Gift1 {
 
         BufferedWriter outFile = new BufferedWriter(new FileWriter("gift1.out"));
         for (int i = 0; i < peopleNumber; ++i) {
-            outFile.write(names[i] + " " + accounts.get(names[i]));
+            outFile.write(names[i] + " " + accounts.get(names[i]) + "\n");
         }
 
         outFile.close();
